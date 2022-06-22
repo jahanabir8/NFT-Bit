@@ -13,13 +13,6 @@ $(window).scroll(function(){
   }else{
       $('.header').removeClass("sticky");
   }
-
-  // scroll-up button show/hide script
-//   if(this.scrollY > 500){
-//       $('.scroll-up-btn').addClass("show");
-//   }else{
-//       $('.scroll-up-btn').removeClass("show");
-//   }
 });
 
 
@@ -27,9 +20,10 @@ $(window).scroll(function(){
 $('.nft-owl-carousel').owlCarousel({
   loop:true,
   autoplay: {
-    delay: 500,
+    delay: 100,
     disableOnInteraction: false,
   },
+  smartSpeed:850,
   margin:10,
   nav:true,
   responsive:{

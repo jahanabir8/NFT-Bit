@@ -3,6 +3,31 @@
     margin: 0;
     font-family: 'Bakbak One', cursive;
 }
+
+/* ===scroll bar vartically customising=== */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #132E32; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1D1D1D; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #132E32; 
+  }
+/* ===scroll bar vartically customising=== */
+
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
@@ -1024,6 +1049,7 @@ button.accordion-button {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .community__title h2 {
@@ -1121,3 +1147,69 @@ button.accordion-button {
     }
 }
 /* =====community section start here===== */
+
+
+/* =====footer section start here===== */
+.footer__section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+}
+
+.footer__image {
+    position: relative;
+    /* background-color: #000; */
+}
+
+.header__list.footers__list {
+    max-width: 373px;
+    min-width: unset;
+    margin: unset;
+}
+
+.header__list.footers__list ul li a{
+    font-family: var(--para-font);
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+}
+
+.header__list.footers__list ul li a:hover,
+ .to__up a:hover {
+    color: #fff;
+}
+
+.copyright {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.copyright p {
+    font-family: var(--para-font);
+}
+
+.to__up a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 30px;
+}
+
+.side__image{
+    position: absolute;
+    top: 0;
+}
+
+.side__image.left__side {
+    position: absolute;
+    left: 0;
+    /* top: 0; */
+    height: 100%;
+}
+
+.side__image.right__side {
+    position: absolute;
+    right: 0;
+    /* top: 0; */
+}
+/* =====footer section end here===== */
