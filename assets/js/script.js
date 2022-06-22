@@ -5,10 +5,23 @@ $(".cross__button").click(function(){
     $(".mobile__menu").removeClass("open");
   })
 
+
+  // $(".mobile__icon__bar").click(function(){
+  //   $(".mobile__menu").toggleClass("open");
+  // })
+
+  // $(window).on('click',function(e){
+  //   if(e.target.className != 'fa-solid fa-bars'){
+  //       $(".mobile__menu").removeClass('open');
+  //     }
+  // })
+
+
+
 // sticy nabvar
 $(window).scroll(function(){
   // sticky navbar on scroll script
-  if(this.scrollY > 100){
+  if(this.scrollY > 50){
       $('.header').addClass("sticky");
   }else{
       $('.header').removeClass("sticky");
@@ -23,7 +36,9 @@ $('.nft-owl-carousel').owlCarousel({
     delay: 100,
     disableOnInteraction: false,
   },
-  smartSpeed:850,
+  autoplayTimeout:2000,
+  speed: 1000,
+  autoplaySpeed : 1000,
   margin:10,
   nav:true,
   responsive:{
@@ -44,9 +59,12 @@ $('.nft-owl-carousel').owlCarousel({
 $('.road__map__slide').owlCarousel({
   loop:true,
   autoplay: {
-    delay: 500,
+    delay: 100,
     disableOnInteraction: false,
   },
+  autoplayTimeout:2000,
+  speed: 1000,
+  autoplaySpeed : 1000,
   margin:10,
   nav:true,
   responsive:{
@@ -64,3 +82,5 @@ $('.road__map__slide').owlCarousel({
       }
   }
 })
+ 
+ 
