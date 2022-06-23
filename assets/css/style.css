@@ -18,7 +18,7 @@
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #1D1D1D; 
+    background: #494848; 
     border-radius: 10px;
   }
   
@@ -1081,6 +1081,10 @@ button.accordion-button.collapsed {
 
 button.accordion-button {
     font-size: 24px;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    height: 80px;
 }
 
 .accordion-item {
